@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Limay Baker</title>
+</head>
+<body>
+    <header><img src="./img/logo.png" alt="logo" class="logo">
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="html/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="html/productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="html/gifcard.html">Giftcards</a>
+                </li>
+            </ul>
+            <form action="search"> <input type="search" autocomplete="off"placeholder="Buscar"> </form>
+            <div class="car"> </div>
+        </nav>
+    </header>
+        
+            <main>
+              <div class="carrousel">
+                    <div class="principales">
+                        <a class="antes" onclick="plusSlides(-1)">&#10094;</a>
+                        <img src="./img/pan1.jpg" alt="">
+                        <img src="./img/pan2.jpg" alt="">
+                        <a class="despues" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+
+                    <div>
+                        <ul class="puntos">
+                            <li class="punto" onclick="currentSlide(1)"></li>
+                            <li class="punto" onclick="currentSlide(2)"></li>
+                          </ul>
+                    </div>
+                  </div>
+
+                  
+                  <section class="cards">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card h-100" style="width: 80%;">
+                            <img src="./img/desayuno1.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Desayunos</h5>
+                              <p class="card-text">Personalizados Para Regalar, Sorpresa Para Compartir.</p>
+                              <a href="#" class="btn btn-primary">Ver +</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" style="width: 80%;">
+                            <img src="./img/picada2.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Picadas</h5>
+                              <p class="card-text">Comen Cuatro Pican Ocho.</p>
+                              <a href="#" class="btn btn-primary">Ver +</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100" style="width: 80%;">
+                            <img src="./img/tortas1.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Tortas</h5>
+                              <p class="card-text">Reunir a Familiares y Amigos en torno a la dulce celebración da la vida.</p>
+                              <a href="#" class="btn btn-primary">Ver +</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                
+              <!-- NO ENCONTRE LA FORMA DE AGREGAR CSS , NO SE SI ES POR BOOTSTRAP -->
+              
+                    <fieldset class="especiales">
+                        <legend>Especiales</legend>
+                        <ul>
+                            <li>
+                                <a href="#">Cumpleañito</a>
+                              </li>
+                            <li>
+                                <a href="#">Lunch</a>
+                            </li>
+                            <li>
+                                <a href="#">Vegan</a>
+                            </li>
+                            <li>
+                              <a href="#">Mateada</a>
+                            </li>
+                            <li>
+                                <a href="#">Patiesserie</a>
+                            </li>
+                            <li>
+                                <a href="#">Varios</a>
+                            </li>
+                        </ul>
+                      </fieldset>
+                <section class="redes">
+                    <h2 class="seguir">Seguinos</h2>
+                    <h3>Facebook</h3>
+                    <h3>Instagran</h3>
+
+                </section>
+
+                <footer>
+                    <h2>Contactanos</h2>
+                    <h4>11333111</h4>
+                    <h4>info@limaybakery.com.ar</h4>
+                    <h4>Av. Siempreviva 742</h4>
+                  </footer>
+            </main>
+            
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          </body>
+</html>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////
+                       TENGO QUE REALIZAR CAMBIOS EN EL CAROUSEL
+///////////////////////////////////////////////////////////////////////////////// -->
+
+<!--  <div id="carouselExampleIndicators" class="carousel slide">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     </div>
+
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="img/pan1.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="img/pan2.jpg" class="d-block w-100" alt="...">
+       </div>
+       
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+
+ </div> -->
